@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Norse';
+  src: url('Norse-Bold.otf');
+}
+:root {
+  font-family: sans-serif;
+}
+#parent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: #1f2022;
+}
+#formHero {
+  flex: 1;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: #1f2022;
+}
+#formHero * {
+  padding: 2.5%;
+}
+#logocontainer {
+  display: flex;
+  flex-direction: row;
+  height: 22.5%;
+  margin-bottom: 50vh;
+  justify-content: center;
+  align-items: center;
+  color: #f6f5f5;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#overlay {
+  height: 100%;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
+#odin {
+  height: 12.5vw;
+  text-align: center;
+  align-self: center;
+  flex: 0.25;
+}
+#copyright {
+  color: #f6f5f5;
+  align-self: center;
+}
+#logotxt {
+  align-self: center;
+  font-size: 7.5vw;
+  font-weight: 400;
+  font-family: 'Norse';
+}
+#hTXT,
+#hTXT2 {
+  color: #7ebab5;
+  font-size: 2vw;
+  font-weight: 500;
+  padding-right: 5%;
+}
+
+#formC {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  flex-direction: row;
+  background-color: #353a40;
+}
+#form {
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+}
+#imgHero {
+  width: 50%;
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+#heroIMG {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.formINP {
+  height: 2.5em;
+  padding: 5%;
+  border: 0;
+  border-radius: 40px;
+  color: #f6f5f5;
+  background-color: #1f2022;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.formLBL {
+  text-align: left;
+  color: #f6f5f5;
+  flex: 1;
+  font-size: 0.75em;
+  font-weight: 400;
+}
+.formItem {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.formList {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5%;
+}
+#submit {
+  background-color: #7ebab5;
+  border: none;
+  color: #1f2022;
+  border-radius: 40px;
+  margin-top: 5%;
+  margin-left: 5%;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+#submit:hover {
+  margin-bottom: 0;
+  background-color: #353a40;
+  color: #f6f5f5;
+}
+#submit:active {
+  background-color: #f6f5f5;
+  color: #1f2022;
+}
+#login {
+  color: #7ebab5;
+  font-size: 1.25vw;
+  font-weight: 900;
+  margin-inline: 0;
+  margin-left: 1em;
+}
+#loginurl {
+  color: #f6f5f5;
+  font-size: 1.25vw;
+  font-weight: 900;
+  margin-inline: 0;
+
+  text-decoration: none;
+}
+#login,
+#loginurl {
+  margin-top: 0%;
+}
+.formINP:focus {
+  border: 1px solid #f6f5f5;
+}

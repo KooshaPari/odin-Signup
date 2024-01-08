@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="parent">
+      <!-- ### -- LEFTHAND IMAGE HERO -- ### -->
+      <div id="imgHero">
+        <!-- ### -- OVERLAY BANNER -- ### -->
+
+        <img
+          id="heroIMG"
+          src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="some green leaves"
+        />
+        <div id="overlay">
+          <div id="logocontainer">
+            <img
+              id="odin"
+              height="196px"
+              src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+              alt="Odin Logo"
+              id="logo"
+            />
+            <h1 id="logotxt">Odin</h1>
+          </div>
+          <!-- ### -- LOWER COPYRIGHT TEXT -- ### -->
+          <p id="copyright">Photo on Unsplash</p>
+        </div>
+      </div>
+      <!-- ### -- RIGHTHAND FORM HERO -- ### -->
+      <div id="formHero">
+        <div id="header">
+          <h2 id="hTXT">
+            This is not a real online service! You know you need something like this in your life to
+            help you realize your deepest dreams. Sign up <em>now</em> to get started.
+          </h2>
+          <h2 id="hTXT2">You<em>know</em>you want to.</h2>
+        </div>
+        <form method="post" action="https://httpbin.org/post" id="form">
+          <div id="formC">
+            <ul class="formList">
+              <li class="formItem">
+                <label class="formLBL" for="fName">First Name</label>
+                <input
+                  class="formINP"
+                  type="text"
+                  id="fName"
+                  required
+                  name="fName"
+                  placeholder="John"
+                />
+              </li>
+              <li class="formItem">
+                <label class="formLBL" for="email">Email</label>
+                <input
+                  class="formINP"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="johndoe@example.com"
+                  required
+                />
+              </li>
+              <li class="formItem">
+                <label class="formLBL" for="password2">Password</label>
+                <input
+                  class="formINP pass"
+                  type="password"
+                  id="password2"
+                  name="password2"
+                  placeholder=" Password"
+                  required
+                />
+              </li>
+            </ul>
+            <ul class="formList">
+              <li class="formItem">
+                <label class="formLBL" for="lName">Last Name</label>
+                <input
+                  class="formINP"
+                  type="text"
+                  id="lName"
+                  pattern="[A-Za-z\s]+"
+                  required
+                  name="lName"
+                  placeholder="Doe"
+                />
+              </li>
+              <li class="formItem">
+                <label class="formLBL" for="phoneNum">Phone Number</label>
+                <input
+                  class="formINP"
+                  type="tel"
+                  id="phoneNum"
+                  minlength="10"
+                  name="phoneNum"
+                  placeholder="123 456 7890"
+                  pattern="\d{3}\d{3}\d{4}"
+                  required
+                />
+              </li>
+              <li class="formItem">
+                <label class="formLBL" for="password">Confirm Password</label>
+                <input
+                  class="formINP pass"
+                  type="password"
+                  id="password"
+                  name="Confirm password"
+                  placeholder="Password"
+                  required
+                />
+              </li>
+            </ul>
+          </div>
+          <div id="actions">
+            <button id="submit" type="submit">Create Account</button>
+            <p id="login">Already have an account?<a src="google.com" id="loginurl">Log in</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
